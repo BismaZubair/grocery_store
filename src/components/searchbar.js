@@ -1,0 +1,12 @@
+import React from 'react';
+
+function SearchBar({ query, setQuery }) {
+  return React.createElement('input', {
+    type: 'text',
+    placeholder: 'Search products...',
+    value: query,
+    onChange: e => setQuery(e.target.value)
+  });
+}
+
+export default SearchBar;
