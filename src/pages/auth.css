@@ -1,0 +1,198 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  
+
+}
+
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(8px);
+  z-index: -1;
+}
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+.auth-page {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+}
+
+.auth-page h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.auth-page form {
+  display: block;
+}
+
+.auth-page input,
+.auth-page select {
+  display: block;
+  width: 90%;
+  max-width: 280px;
+  margin: 0 auto 14px auto; 
+  padding: 12px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000; 
+  outline: none;
+  transition: background 0.3s ease;
+  box-sizing: border-box;
+}
+
+.auth-page input::placeholder,
+.auth-page select:invalid {
+  color: rgba(0, 0, 0, 0.5); 
+}
+
+.auth-page input:focus,
+.auth-page select:focus {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+.auth-page select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.auth-page button {
+  display: block;
+  width: 60%;
+  max-width: 200px;
+  margin: 20px auto 10px auto; 
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #101820;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-page button:hover {
+  background-color: #ff7b00;
+}
+
+.auth-page .error {
+  color: #ffdddd;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #eee;
+}
+
+.register-link a {
+  color: #ffb347;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.phone-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 15px auto;
+ 
+  overflow: hidden;
+
+  
+
+}
+
+.code-box select {
+  border: none;
+  outline: none;
+  width: 70px;
+  padding: 10px 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #100e0e;
+  font-size: 14px;
+  text-align: center;
+  appearance: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.only-phone {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+}
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+}

@@ -2,66 +2,74 @@ const products = [
   {
     id: 1,
     name: "Fresh Milk",
-    image: "C:\Users\OAK\Pictures\freshmilk.png",
+    image: "/Products/freshmilk.png",
     price: 180,
     description: "1 liter of fresh cow milk.",
-    category: "Dairy"
+    category: "Dairy",
+    stock: 150
   },
   {
     id: 2,
     name: "White Bread",
-    image: "C:\Users\OAK\Pictures\whitebread.png",
+    image: "/Products/whitebread.png",
     price: 90,
     description: "Soft and fresh white bread loaf.",
-    category: "Bakery"
+    category: "Bakery",
+    stock:100
   },
   {
     id: 3,
     name: "Eggs (12 pcs)",
-    image: "C:\Users\OAK\Pictures\eggs.png",
+    image: "/Products/eggs.png",
     price: 200,
     description: "Farm fresh eggs - pack of 12.",
-    category: "Dairy"
+    category: "Dairy",
+    stock:400
   },
   {
     id: 4,
     name: "Basmati Rice (5kg)",
-    image: "C:\Users\OAK\Pictures\rice.png",
+    image: "/Products/rice.png",
     price: 1200,
     description: "Long grain basmati rice - 5kg bag.",
-    category: "Grains"
+    category: "Grains",
+    stock:25
   },
   {
     id: 5,
     name: "Cooking Oil (1L)",
-    image: "C:\Users\OAK\Pictures\cookingoil.png",
+    image: "/Products/cookingoil.png",
     price: 520,
     description: "Sunflower cooking oil - 1 liter.",
-    category: "Pantry"
+    category: "Pantry",
+    stock:250
   },
   {
     id: 6,
     name: "Cheddar Cheese",
-    image: "C:\Users\OAK\Pictures\chedarcheese.png",
+    image: "/Products/chedarcheese.png",
     price: 450,
     description: "200g block of cheddar cheese.",
-    category: "Dairy"
+    category: "Dairy",
+    stock:300
   },
   {
     id: 7,
     name: "Whole Wheat Bread",
-    image: "C:\Users\OAK\Pictures\wholewheatbread.png",
+    image: "/Products/wholewheatbread.png",
     price: 110,
     description: "Healthy whole wheat bread loaf.",
-    category: "Bakery"
+    category: "Bakery",
+    stock:550
   },
   {
     id: 8,
     name: "Brown Sugar (1kg)",
-    image: "C:\Users\OAK\Pictures\brownsugar.png",
+    image: "/Products/brownsugar.png",
     price: 250,
     description: "1kg pack of organic brown sugar.",
-    category: "Pantry"
+    category: "Pantry",
+    stock:450
   }
 ];
 

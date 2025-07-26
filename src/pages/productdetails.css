@@ -1,0 +1,150 @@
+.details-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.details-container img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.details-container .error {
+  color: #ffdddd;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.details-container button {
+  margin: 10px;
+}
+
+.details-container h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.details-container p {
+  font-size: 16px;
+  color: #080808;
+  margin: 8px 0;
+}
+
+.details-container button {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 114, 255, 0.4);
+}
+
+.details-container button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+  gap: 8px;
+}
+
+.quantity-selector button {
+  padding: 6px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #101820;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quantity-selector button:hover {
+  background: #ff7b00;
+}
+
+.qty-box {
+  width: 50px;
+  margin: 0 8px;
+  text-align: center;
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .details-container {
+    max-width: 90%;
+    padding: 25px;
+    margin: 30px auto;
+  }
+  .details-container h2 {
+    font-size: 24px;
+  }
+  .details-container p {
+    font-size: 15px;
+  }
+  .details-container button {
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+  .qty-box {
+    width: 45px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-container {
+    padding: 20px 15px;
+    margin: 20px 10px;
+  }
+  .details-container h2 {
+    font-size: 22px;
+  }
+  .details-container p {
+    font-size: 14px;
+  }
+  .details-container button {
+    font-size: 14px;
+    padding: 8px 14px;
+    margin: 8px;
+  }
+  .quantity-selector {
+    gap: 6px;
+  }
+  .quantity-selector button {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+  .qty-box {
+    width: 40px;
+    font-size: 13px;
+  }
+}

@@ -1,16 +1,18 @@
-
+// src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthProvider } from './context/AuthContext'; // ✅ this path must match
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  React.createElement(React.StrictMode, null,
-    React.createElement(App)
-  )
+  <React.StrictMode>
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+  </React.StrictMode>
 );
 
 reportWebVitals();
-
