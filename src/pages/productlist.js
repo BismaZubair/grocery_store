@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProductCard from '../components/productcard';
+import ProductCard from '../components/productcard'; 
 import SearchBar from '../components/searchbar';
 import FilterBar from '../components/filterbar';
 import SortBar from '../components/sortbar';
@@ -34,7 +34,7 @@ function ProductList() {
 
   return (
     <div>
-      <h2>Grocery Products</h2>
+      <h2 style={{ textAlign: 'center', marginTop: '20px' }}>Grocery Products</h2>
 
       <div className="wrapper">
         <SearchBar query={query} setQuery={setQuery} />
@@ -43,9 +43,13 @@ function ProductList() {
       </div>
 
       <div className="grid">
-        {filtered.map(product => (
-          <ProductCard product={product} key={product.id} />
-        ))}
+        {filtered.length > 0 ? (
+          filtered.map(product => (
+            <ProductCard product={product} key={product.id} />
+          ))
+        ) : (
+          <p style={{ textAlign: 'center', fontSize: '18px' }}>No products found.</p>
+        )}
       </div>
     </div>
   );
