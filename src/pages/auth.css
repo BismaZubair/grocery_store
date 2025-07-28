@@ -181,18 +181,33 @@ body::before {
 }
 .password-wrapper {
   position: relative;
+  width: 90%;
+  max-width: 280px;
+  margin: 0 auto 14px auto; 
 }
 
 .password-wrapper input {
   width: 100%;
-  padding-right: 40px;
+  padding-right: 45px; 
+  padding-left: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  outline: none;
+  transition: background 0.3s ease;
+  box-sizing: border-box;
 }
 
 .eye-icon {
   position: absolute;
   top: 50%;
-  right: 80px;
+  right: 14px; 
   transform: translateY(-50%);
   cursor: pointer;
-  color: #555;
+  color: #000;
+  font-size: 18px;
 }

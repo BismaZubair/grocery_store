@@ -13,7 +13,6 @@ function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
   const [stock, setStock] = useState(product ? product.stock : 0);
 
-  // Load stock from localStorage on mount
   useEffect(() => {
     if (product) {
       const savedStock = JSON.parse(localStorage.getItem('stock')) || {};
